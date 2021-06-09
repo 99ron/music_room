@@ -6,3 +6,6 @@ music_controller/db.sqlite3
 music_controller/music_controller/__init__.py
 music_controller/music_controller/__pycache__/*
 .env
+
+music_controller/frontend/migrations
+music_controller/frontend/node_modules
