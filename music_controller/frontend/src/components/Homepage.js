@@ -65,7 +65,7 @@ export default class Homepage extends Component {
                 <Route 
                 path="/room/:roomCode" 
                 render={(props) => {
-                    return <Room {...props} leaveRoomCallBack={this.clearRoomCode} />
+                    return <Room {...props} leaveRoomCallback={this.clearRoomCode} />
                 }}
                 />
             </Switch>

@@ -18,7 +18,7 @@ export default class Room extends Component {
         fetch('/api/get-room' + '?code=' + this.roomCode)
             .then((response) => {
                 if(!response.ok) {
-                    this.props.leaveButtonPressed();
+                    this.props.leaveRoomCallback();
                     this.props.history.push('/');
                 }
                 return response.json();
@@ -38,7 +38,7 @@ export default class Room extends Component {
             headers: {'Content-Type': 'application/json'},
         };
         fetch('/api/leave-room', requestOptions).then((response) => {
-            this.props.leaveButtonPressed();
+            this.props.leaveRoomCallback();
             this.props.history.push('/');
         });
     }
